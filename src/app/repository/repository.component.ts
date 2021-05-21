@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoryComponent implements OnInit {
 
-  constructor() { }
+  myRepos:RepoList[];
+  constructor(public repoService:ReposServiceService) { }
 
-  ngOnInit(): void {
+  findRepo(username){
+    this.repoService.getRepoInfo(username).subscribe(data =>{
+      this.myRepos = data;
+      console.log(this.myRepos)
+
+    })
   }
-
+  ngOnInit() {
+    this.findRepo('Chebichii-Lab');
+  }
 }
