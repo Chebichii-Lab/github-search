@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class HttpServiceService {
   users:Users[] = [];
+  findUser: any;
 
   constructor(private http:HttpClient) { }
 
