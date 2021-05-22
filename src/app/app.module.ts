@@ -5,28 +5,31 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { RepositoryComponent } from './repository/repository.component';
+import { RepoComponent } from './repository/repository.component';
 import { SearchComponent } from './search/search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCreatedPipe } from './date-created.pipe';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavbarComponent,
-    RepositoryComponent,
+    RepoComponent,
     SearchComponent,
     NotFoundComponent,
     HighlightDirective,
     DateCreatedPipe,
-    HttpClientModule
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

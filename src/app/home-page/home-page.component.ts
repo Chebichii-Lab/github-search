@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpServiceService } from '../http-service.service';
 import { User } from '../user';
+import {HttpService} from '../http.service'
 
 @Component({
   selector: 'app-home-page',
@@ -10,6 +10,7 @@ import { User } from '../user';
 export class HomePageComponent implements OnInit {
 
   users!:User[];
+
   searchUserName(username: string){
    this.httpServiceService.findUser(username).then(
      ()=>{
@@ -21,9 +22,11 @@ export class HomePageComponent implements OnInit {
      }
    )
   }
-  constructor(public httpServiceService:HttpServiceService) { }
+  constructor(public httpServiceService: HttpService) { }
 
   ngOnInit() {
+    
     this.searchUserName('Chebichii-Lab');
   }
+
 }
