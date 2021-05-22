@@ -1,11 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RepositoryServiceService {
   _URL = 'https://api.github.com/users/';
-  token = '?access_token=' + environment.GithubKey;
+  token = '?access_token=' + environment.api_key;
 
   constructor(public http: HttpClient) { }
 

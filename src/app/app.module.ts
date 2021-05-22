@@ -10,6 +10,7 @@ import { SearchComponent } from './search/search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCreatedPipe } from './date-created.pipe';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DateCreatedPipe } from './date-created.pipe';
     SearchComponent,
     NotFoundComponent,
     HighlightDirective,
-    DateCreatedPipe
+    DateCreatedPipe,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
