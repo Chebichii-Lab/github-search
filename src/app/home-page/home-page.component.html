@@ -1,5 +1,5 @@
 <div>
-    <h2 class="text-center pt-5 heading" appHighlight>Github Search</h2>
+    <h2 class="text-center pt-5 heading" appHighlight>GITHUB SEARCH</h2>
     <app-search (emitUserName)="searchUserName($event)"></app-search>
     <div class="row" *ngFor = "let user of users">
         <div class="col-md-5 pt-5">
@@ -24,7 +24,7 @@
                         <div class="card profile">
                                 <div class="card-header">
                                     <h1 class="text-info" style="padding:20px">{{user.login}}</h1>
-                                    <p><strong>Repos:</strong>  {{user.public_repos}}</p>
+                                    <p><strong>Repositories:</strong>  {{user.public_repos}}</p>
                                     <p><strong>Created at:</strong>  {{user.created_at|date}}</p>
                                     <p><strong>Followed by:</strong>  {{user.followers}}</p>
                                     <p><strong>Following:</strong>{{user.following}}</p>
