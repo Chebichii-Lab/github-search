@@ -1,0 +1,26 @@
+.card{
+    color: #000000;
+    background-color:#487aa3;
+    font-family: 'Acme', sans-serif;
+    font-style: oblique;
+    font-size: 22px;
+}
+
+.card-header {
+    color: rgb(0, 0, 0);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    
+}
+
+.heading{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.card-columns{
+    column-count: 1;
+    column-gap: 40px;
+}
