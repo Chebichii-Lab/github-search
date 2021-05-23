@@ -1,14 +1,11 @@
 h2{
-    font-size: 50px;
+    font-size: 80px;
+    font-weight: bolder;
 }
 
-h1{
-    color: black;
-}
 
 .card{
     color: black;
-    border:1px  #fca311;
     border-style: groove;
     
 }
