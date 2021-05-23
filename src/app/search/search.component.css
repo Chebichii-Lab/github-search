@@ -7,7 +7,7 @@
     padding: 10px;
     }
 
-    /* .search_input{
+    .search_input{
         color: white;
         border: 0;
         outline: 0;
@@ -16,12 +16,12 @@
         caret-color:transparent;
         line-height: 40px;
         transition: width 0.4s linear;
-        } */
+        }
 
         .searchbar:hover > .search_input{
             padding: 0 10px;
             width: 450px;
-            caret-color:red;
+            /* caret-color:red; */
             transition: width 0.4s linear;
             }
 .btn{
