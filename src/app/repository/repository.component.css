@@ -1,6 +1,6 @@
 .card{
     color: #000000;
-    background-color:#487aa3;
+    background-color:#d6e3ec;
     font-family: 'Acme', sans-serif;
     font-style: oblique;
     font-size: 22px;
@@ -22,5 +22,6 @@
 
 .card-columns{
     column-count: 1;
-    column-gap: 40px;
+    column-gap: 50px;
 }
+

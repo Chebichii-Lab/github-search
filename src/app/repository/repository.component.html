@@ -1,5 +1,5 @@
 <div class="whole">
-  <h2 class="text-center pt-5 heading">Repository Search</h2>
+  <h2 class="text-center pt-5 heading" style="color:white">Repository Search</h2>
   <app-search (emitUserName)="findRepo($event)"></app-search>
   <div class="container-fluid  card-columns pt-5">
     <div class="card text-black" *ngFor="let repo of myRepos">
@@ -15,6 +15,12 @@
           <p>Watchers: {{repo.watchers}}</p>
           <p>Forks: {{repo.forks}}</p>
           <p>Default branch: {{repo.default_branch}}</p>
+
+          <a href="{{ repo.html_url }}" target="_blank">
+            <button style="color:rgb(248, 211, 0);" class="btn btn-dark">View on GitHub <i
+                class="fab fa-github"></i></button>
+          </a>
+
         </div>
       </div>
     </div>

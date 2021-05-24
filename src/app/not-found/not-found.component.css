@@ -1,0 +1,16 @@
+*{
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.678);
+    height: inherit;
+  }
+
+  h1{
+    position: relative;
+    top: 40%;
+    font-family: system-ui,serif;
+    font-size: 100px;
+  }
